@@ -97,7 +97,7 @@ public class OpenShiftIT {
 
 	@Before
 	public void assureServiceIsWorking() {
-		await().atMost(10, TimeUnit.SECONDS).until(() -> testGreeting(HELLO_OK));
+		await().atMost(240, TimeUnit.SECONDS).until(() -> testGreeting(HELLO_OK));
 	}
 
 	@Test
